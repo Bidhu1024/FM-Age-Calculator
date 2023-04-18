@@ -43,6 +43,7 @@ const Main = () => {
             <label style={{ fontSize: "1rem" }}>DAY</label>
             <TextField placeholder="DD"
             value={day.value}
+            helperText={day.msg}
             onChange={
                ()=>{
                 if(day.value === ""){
