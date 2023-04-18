@@ -48,15 +48,15 @@ const Main = () => {
                ()=>{
 
                 let text = e.target.value
-                if(day.value === ""){
+                if(text === ""){
                 setDay({
-                    value:'',
+                    value:text,
                     error:'true',
                     msg:'This field is required'
                 })
-               }else if(day.value>31){
+               }else if(text>31){
                 setDay({
-                    value:{day.value},
+                    value:text,
                     error:'true',
                     msg:'This field is required'
                 })
