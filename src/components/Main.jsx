@@ -46,6 +46,8 @@ const Main = () => {
             helperText={day.msg}
             onChange={
                ()=>{
+
+                let text = e.target.value
                 if(day.value === ""){
                 setDay({
                     value:'',
