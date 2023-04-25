@@ -45,7 +45,7 @@ const Main = () => {
             value={day.value}
             helperText={day.msg}
             onChange={
-               ()=>{
+               (e)=>{
 
                 let text = e.target.value
                 if(text === ""){
@@ -58,7 +58,13 @@ const Main = () => {
                 setDay({
                     value:text,
                     error:'true',
-                    msg:'This field is required'
+                    msg:'Must be a valid day'
+                })
+               }else{
+                setDay({
+                  value:text,
+                  error:false,
+                  msg:''
                 })
                }
                }
